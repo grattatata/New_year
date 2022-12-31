@@ -22,7 +22,7 @@ body {
   }
 }
 
-.floating {
+/* .floating {
   animation-name: floating;
   -webkit-animation-name: floating;
 
@@ -55,7 +55,7 @@ body {
   100% {
     -webkit-transform: translateY(0%);
   }
-}
+} */
 
 button {
   position: absolute;
