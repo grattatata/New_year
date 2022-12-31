@@ -6,22 +6,75 @@
 // $mobile: "only screen and (max-width: 800px)";
 
 body {
-  background: #50759b;
+  background: #093657;
   overflow: hidden;
+}
+
+.snowflake {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: -8px;
+}
+
+@keyframes fall {
+  from {
+  }
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.floating {
+  animation-name: floating;
+  -webkit-animation-name: floating;
+
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(8%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(8%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
 }
 
 button {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 48%;
+  left: 18%;
   transform: translate(-50%, -50%);
   padding: 20px 45px;
   font-size: 20px;
   font-weight: 500;
   z-index: 10000;
   border-radius: 30px 30px 30px 30px;
-  background: black;
-  color: #fff;
+  background: white;
+  color: black;
   width: 290px;
 
   &:before {
@@ -30,17 +83,17 @@ button {
     width: 50px;
     height: 50px;
     bottom: 60px;
-    left: 30px;
+    left: -40px;
     z-index: 0;
-    background: url(../image/cow.png) center center / 100% no-repeat;
+    background: url(../image/배경힘.png) center center / 100% no-repeat;
     transition: all 0.3s ease-in-out;
   }
 
-  &:hover {
-    &:before {
-      transform: translate(10px, -15px) scale(1.7);
-    }
-  }
+  // &:hover {
+  //   &:before {
+  //     transform: translate(10px, -15px) scale(1.7);
+  //   }
+  // }
 
   &.dimd {
     display: none;
@@ -73,7 +126,7 @@ button {
     position: relative;
     width: 400px;
     height: 250px;
-    background: #10264a;
+    background: #062844;
 
     // transform: scale(.1) rotateX(0);
     // transition: all .5s ease-in-out;
@@ -85,8 +138,8 @@ button {
 
     h1 {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: -40px;
+      left: 5px;
       width: 100%;
       height: 200px;
       background: url(../image/새해복-removebg-preview.png) center top / 200px
@@ -170,11 +223,22 @@ button {
       position: absolute;
       width: 70px;
       height: 70px;
-      bottom: 0;
+      bottom: 3px;
       left: 0;
       z-index: 10;
       background: url(../image/cow.png) center center / 100% no-repeat;
       transform: translate3d(65px, -9px, 48px);
+    }
+
+    .goodbye {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      background: url(../image/그림2.png) center center / 100% no-repeat;
+      transform: translate3d(68px, -10px, 49px);
     }
   }
 
