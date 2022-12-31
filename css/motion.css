@@ -220,7 +220,7 @@ button.dimd {
   height: 70px;
   bottom: 0;
   left: 0;
-  z-index: 2;
+  z-index: 200;
   background: url(../image/그림2.png) center center/100% no-repeat;
   transform: translate3d(65px, -9px, 48px);
 }
