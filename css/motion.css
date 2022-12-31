@@ -95,7 +95,7 @@ button.dimd {
 .contentWrap {
   position: absolute;
   top: 51%;
-  left: 50%;
+  left: 20%;
   transform: translate(-50%, -50%);
   transform-style: preserve-3d;
   perspective: 800px;
@@ -222,7 +222,7 @@ button.dimd {
   left: 0;
   z-index: 200;
   background: url(../image/그림2.png) center center/100% no-repeat;
-  transform: translate3d(65px, -9px, 48px);
+  transform: translate3d(68px, -10px, 49px);
 }
 
 .contentWrap .back {
