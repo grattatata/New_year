@@ -95,7 +95,7 @@ button.dimd {
 .contentWrap {
   position: absolute;
   top: 51%;
-  left: 20%;
+  left: 50%;
   transform: translate(-50%, -50%);
   transform-style: preserve-3d;
   perspective: 800px;
